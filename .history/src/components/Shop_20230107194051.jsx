@@ -37,7 +37,7 @@ function Shop() {
 
       setOrder(newOrder);
     }
-    setAlertName(item.name);
+    setAlertName(item.name)
   };
 
   const removeFromBasket = (itemId) => {
