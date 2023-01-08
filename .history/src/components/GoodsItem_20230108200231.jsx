@@ -8,9 +8,10 @@ function GoodsItem(props) {
     description,
     price,
     full_background,
+    addToBasket = Function.prototype,
   } = props;
 
-  const {addToBasket} =useContext(ShopContext);
+  const {} =useContext(ShopContext);
 
   return (
     <div className="card" id={id}>

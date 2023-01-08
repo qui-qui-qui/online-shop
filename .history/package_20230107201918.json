@@ -1,6 +1,6 @@
 {
   "name": "online-shop",
-  "homepage": "https://qui-qui-qui.github.io/onlne-shop",
+  "home": "https://qui-qui-qui.github.io/onlne-shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

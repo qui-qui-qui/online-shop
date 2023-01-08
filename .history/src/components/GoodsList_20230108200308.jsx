@@ -1,10 +1,7 @@
-import { useContext } from 'react';
-import { ShopContext } from '../context';
 import {GoodsItem} from './GoodsItem';
 
-
 function GoodsList(props) {
-    const {goods = []} = useContext(ShopContext);
+    const {goods = [], addToBasket = Function.prototype} = props;
 
     if (!goods.length) {
         return <h3>Здесь пусто</h3>

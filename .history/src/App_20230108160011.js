@@ -8,9 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <ContextProvider>
-        <Shop/>
-      </ContextProvider>
+      <Shop />
       <Footer />
     </>
   );

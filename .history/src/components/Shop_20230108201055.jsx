@@ -22,7 +22,6 @@ function Shop() {
       .then((data) => {
         setGoods(data.featured)
       });
-      //eslint-disable-next-line
   }, []);
 
   return (

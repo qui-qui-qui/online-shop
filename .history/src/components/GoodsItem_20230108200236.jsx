@@ -8,6 +8,7 @@ function GoodsItem(props) {
     description,
     price,
     full_background,
+    addToBasket = Function.prototype,
   } = props;
 
   const {addToBasket} =useContext(ShopContext);

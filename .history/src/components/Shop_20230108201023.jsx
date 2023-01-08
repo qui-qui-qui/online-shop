@@ -22,23 +22,22 @@ function Shop() {
       .then((data) => {
         setGoods(data.featured)
       });
-      //eslint-disable-next-line
   }, []);
 
   return (
     <main className="container content">
-      <Cart quantity={order.length} />
+      <Cart quantity={order.length} handleBasketShow={handleBasketShow} />
       {loading ? (
         <Preloader />
       ) : (
-        <GoodsList />
+        <GoodsList goods={goods} />
       )}
       {isBasketShow && (
         <BasketList
         />
       )}
       {
-        alertName && <Alert />
+        alertName && <Alert name={alertName} closeAlert={closeAlert}/>
       }
     </main>
   );

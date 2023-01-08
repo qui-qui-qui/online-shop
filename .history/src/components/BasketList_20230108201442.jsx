@@ -4,9 +4,12 @@ import { BasketItem } from "./BasketItem";
 
 function BasketList(props) {
   const {
-    order = [],
+    order,
     handleBasketShow = Function.prototype,
-  } = useContext(ShopContext);
+    removeFromBasket = Function.prototype,
+    incQuantity,
+    decQuantity,
+  } = props;
 
   const totalPrice = order.reduce((sum, el) => {
     return sum + el.price * el.quantity;
